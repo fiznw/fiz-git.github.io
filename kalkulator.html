@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Besar kalkulus</title>
+  <link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+  <header>
+<h1><p align="center">Welcome To Website</p></h1>
+<p align="center">
+<marquee direction="left">TUGAS BESAR KALKULUS SEMESTER 1 </marquee>
+    <nav>
+        <div>
+          <a href="#PENGERTIAN PERSAMAAN LINIER">PENGERTIAN PERSAMAAN LINIER</a> | <a href="#KALKULATOR">KALKULATOR</a></div>
+    </nav></div>
+  </header>
+  <main>
+    <section id="tentang-saya">
+      <h2>Tentang Saya</h2>
+      <fieldset>
+        <legend>DATA DIRI</legend>
+        <p><h4>NAMA     : Hafizh Nur Wahid</h4></p>
+        <p><h4>PRODI    : Teknik Informatika</h4></p>
+        <p><h4>NIM      : 411231078</h4></p>
+        <p><h4>EMAIL    : 411231078@mahasiswa.undira.ac.id</h4></p>
+    </fieldset>
+    <br> <br> <br> <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <fieldset>
+        <legend id="PENGERTIAN PERSAMAAN LINIER">PENGERTIAN PERSAMAAN LINIER </legend>
+                            <h1>KALKULATOR PERSAMAAN LINIER VARIABEL 1 </h1>
+                            <P>Persamaan linear satu variabel adalah salah satu jenis persamaan linear. Seperti dengan namanya,persamaan linear satu variabel tersebut akan memiliki satu variabel dengan pangkat 1 dalam bentuk kalimat terbuka dan dapat dihubungkan dengan tanda =.
+                                Kalimat terbuka dalam persamaan linear satu variabel disini bisa diartikan sebagai kalimat yang belum diketahui kebenarannya atau bisa jadi dalam posisi benar maupun dalam kondisi salah.Secara umum bentuk persamaan linear satu variabel jika dituliskan secara matematik adalah seperti berikut ini.
+                                <br> <br>
+                                ax + b = 0
+                                <br> <br>
+                                Keterangan:
+                                <br>
+                                a = koefisien
+                                <br>
+                                b = konstanta
+                                <br>
+                                x = variable</p>
+                                <br>
+    </fieldset>
+    <fieldset>
+        <legend id="KALKULATOR">KALKULATOR</legend>
+                            <h1> MASUKKAN ax+b=0</h1>
+                            <form>
+                                <label for="a">a:</label>
+                                <input type="number" id="a" name="a"><br><br>
+                        
+                                <label for="b">b:</label>
+                                <input type="number" id="b" name="b"><br><br>
+                        
+                                <input type="button" value="Calculate" onclick="calculateLinearEquation()">
+                            </form>
+    </fieldset>
+    <fieldset>
+        <legend>HASIL</legend>
+                            <p>Result: <span id="result"></span></p>
+                            <script>
+                                function calculateLinearEquation() {
+                                    const a = parseFloat(document.getElementById("a").value);
+                                    const b = parseFloat(document.getElementById("b").value);
+                        
+                                    if (isNaN(a) || isNaN(b)) {
+                                        document.getElementById("result").innerText = "Please enter valid coefficients.";
+                                    } else {
+                                        const x = -b / a;
+                                        document.getElementById("result").innerText = `Solution: x = ${x}`;
+                                    }
+                                }
+                            </script>
+    </fieldset>
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <a href="https://wa.me/0895402099779">WHATSAPP</a> |
+    <a href="mailto:411231078@mahasiswa.undira.ac.id">EMAIL</a>
+    </section>
+  </main>
+  <footer>
+    &copy; Hafizh Nur Wahid2023
+  </footer>
+</body>
+</html>
